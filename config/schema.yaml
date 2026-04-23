@@ -1,0 +1,34 @@
+# 1. Raw Contract (From Simulator/Payment Gateway)
+raw_columns:
+  tx_id: object
+  timestamp: object
+  user_id: object
+  amount: float64
+  amount_usd: float64
+  currency: object
+  country: object
+  lat: float64
+  lon: float64
+  ip: object
+  device_id: object
+  merchant_name: object
+  merchant_category: object
+  card_type: object
+  is_fraud: int64
+  pattern: object
+
+# 2. Processed Contract (Added by Consumer)
+processed_columns:
+  amount_ratio: float64
+  geo_distance: float64
+  geo_speed: float64
+  impossible_travel: int64
+  is_new_device: int64
+  is_new_ip: int64
+  device_switch_count: int64
+  ip_switch_count: int64
+  country_change: int64
+  country_avg_amount: float64
+  user_country_ratio: float64
+
+target_column: is_fraud
