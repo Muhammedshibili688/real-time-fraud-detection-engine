@@ -6,6 +6,10 @@ __pycache__/
 /features.jsonl
 logs/
 datas/
+.env
+*.ipynb
+*.txt
+src.egg-info/
 
 # C extensions
 *.so

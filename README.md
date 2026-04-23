@@ -1,2 +1,38 @@
+Problem statement
+
+1.  Core Problem
+    Online payments suffer from fraud causing financial loss.
+    Financial companies process millions of transaction per day, Some of them are fraudlets.
+    Example:
+        Account take-overs
+        stolen credit card
+        bot driven payment-abuse
+        synthetic identities
+
+2.  Problem Solving
+    Real-time fraud risk scoring
+    When transaction happens:
+        user pays → system evaluates risk → decision returned instantly.
+        Decisions making:
+            Allow transaction
+            Flag and review
+            Block transaction
+
+3.  Who has this problem ?
+    Almost every Fintech, Bank, E-commerce etc.
+
+4.  How much does it costs to companies ?
+    Estimates are in Billions.
+    For payment companies fraud rate is 0.1% - 0.3% of gross transaction.
+
+5.  Impact:
+        False positives → user frustration  
+        False negatives → financial loss
+
+6.  Outcome Needed:
+        Fraud recall
+        False positive rate
+        Latency (<100ms)
+
 # real-time-fraud-detection-engine
 An event-driven machine learning system for real-time transaction risk scoring using Redis Streams, XGBoost, and FastAPI.
